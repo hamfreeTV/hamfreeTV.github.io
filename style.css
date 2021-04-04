@@ -24,19 +24,21 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1em 0;
+    padding: 1em 3em;
 }
 
 #navbar li a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     padding-right: 3em;
     position: relative;
-    transition: all ease-in-out 250ms;
+    
 
 
 }
 
+/*
 #navbar li a::after {
     content: '';
     position: absolute;
@@ -49,8 +51,25 @@ body {
 }
 
 #navbar li a:hover::after {
-    width: 25%;
+    width:max-content;
 }
+*/
+
+#navbar li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+
+#navbar li a:hover::after {
+    width: 25%;
+    transition: width .3s;
+}
+
 
 #navbar li a:hover {
     color: var(--hovercolor);
