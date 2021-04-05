@@ -27,17 +27,6 @@ body {
     padding: 1em 3em;
 }
 
-#navbar li a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    padding-right: 3em;
-    position: relative;
-    
-
-
-}
-
 /*
 #navbar li a::after {
     content: '';
@@ -76,16 +65,34 @@ body {
     transition: all ease-in-out 100ms;
 }
 
-#navbar li:first-child {
+
+
+#navbar li:nth-child(1) {
     margin-right: auto;
     margin-left: 3em;
 }
 
+#navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-right: 3em;
+    position: relative;
+}
+
+
+
+
+
 main {
     position: relative;
+    
+    /*
     min-height: 100vh;
 
     width: 90vw;
+    */
+
     margin: 0 auto;
     padding: 30px 20px;
 }
@@ -103,6 +110,8 @@ article h1 {
     position: relative;
     top: 50%;
     transform: translateY(+250%);
+
+    text-shadow: 2px 3px 5px #def, 0 0 0 #000, 1px 2px 4px #def;
 }
 
 footer {
