@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(224, 224, 224);
+
+    /*
+    background: hsla(222, 33%, 16%, 1);
+    background: linear-gradient(225deg, hsla(222, 33%, 16%, 1) 0%, hsla(0, 0%, 0%, 1) 100%);
+    background: -moz-linear-gradient(225deg, hsla(222, 33%, 16%, 1) 0%, hsla(0, 0%, 0%, 1) 100%); 
+    background: -webkit-linear-gradient(225deg, hsla(222, 33%, 16%, 1) 0%, hsla(0, 0%, 0%, 1) 100%); 
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B2335", endColorstr="#000000", GradientType=1 );
+    */
+}
+
+header {
+    text-align: center;
+    background-color: #121114;
+    color: white;
+    font-family: Oswald, sans-serif; ;
+    padding: 5px;
+    font-size: 24px;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 3em;
+}
+
+/*
+#navbar li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(10, 152, 235);
+    transition: width .3s;
+}
+
+#navbar li a:hover::after {
+    width: 25%;
+    transition: width .3s;
+}
+
+
+#navbar li a:hover {
+    color: var(--hovercolor);
+    transition: all ease-in-out 100ms;
+}
+*/
+
+#navbar li a:hover {
+    color: rgb(184, 184, 184);
+}
+
+
+#navbar li:nth-child(1) {
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+#navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding-right: 3em;
+    position: relative;
+}
+
+/*
+header h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+header p {
+    font-size: 22px;
+}
+*/
+
+
+
+/*
+main {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 94px - 64px);
+
+     100vh - #header-height in px# - #footer-height in px#
+}
+*/
+
+main {
+    min-height: calc(100vh - 94px - 64px);
+    background-image: url('media/Reyna6.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    font-family: Oswald, sans-serif;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* 100vh - #header-height in px# - #footer-height in px# */
+}
+
+main h1 {
+    font-size: 5em;
+    font-style: italic;
+    text-shadow: 2px 3px 5px #def, 0 0 0 #000, 1px 2px 4px #def;
+}
+
+
+
+
+/*
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/VALORANT_Reyna_Dark_2.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+  article:last-child {
+    margin-bottom: 0;
+}
+
+  article h3 {
+    margin: 10px 0 25px 0;
+}
+
+  article p {
+    margin-top: 16px;
+    line-height: 24px;
+}
+*/
+
+footer {
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
