@@ -79,6 +79,51 @@
         position: relative;
     }
 
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        padding-right: 3em;
+        font-size: 24px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
     /*
     header h1 {
         font-size: 48px;
@@ -135,7 +180,30 @@
     }
 
 
+    span::before {
+        content: "REYNA";
+        animation: animate infinite 3s;
+        padding-left: 10px;
+    }
 
+    @keyframes animate {
+
+        0% {
+            content: "REYNA";
+        }
+
+        25% {
+            content: "JETT";
+        }
+
+        50% {
+            content: "RAZE";
+        }
+
+        75% {
+            content: "OMEN";
+        }
+    }
 
     /*
     .hero-image {
@@ -200,7 +268,7 @@
         color: white;
         font-family: Oswald, sans-serif; ;
         padding: 5px;
-        font-size: 16px;
+        font-size: 12px;
     }
 
     #navbar ul {
@@ -249,11 +317,83 @@
         /* 100vh - #header-height in px# - #footer-height in px# */
     }
 
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        padding-right: 3em;
+        font-size: 12px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
     main h1 {
         font-size: 3em;
         font-style: italic;
         text-shadow: 2px 3px 5px #def, 0 0 0 #000, 1px 2px 4px #def;
     }
+
+    span::before {
+        content: "REYNA";
+        animation: animate infinite 3s;
+        padding-left: 10px;
+    }
+
+    @keyframes animate {
+
+        0% {
+            content: "REYNA";
+        }
+
+        25% {
+            content: "JETT";
+        }
+
+        50% {
+            content: "RAZE";
+        }
+
+        75% {
+            content: "OMEN";
+        }
+    }
+
     footer {
         text-align: center;
         font-family: Oswald, sans-serif;
