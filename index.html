@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home | hamfree.de</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/ico" href="media/icon.ico"/>
+</head>
+<body>
+    
+    <section class="showcase">
+
+        <header>
+            <a href="#" class="logo">hamfree.de</a>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">live</a></li>
+                <li><a href="#">twitter</a></li>
+                <li><a href="#links">links ↙</a></li>
+            </ul>
+        </header>
+
+        <video src="media/stock.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>willkommen</h2>
+            <h3>auf hamfree.de</h3>
+            <p>lust auf einen ausflug?</p>
+            <a href="#" class="store">store</a>
+            <!--<a href="#" class="links">links ↙</a>-->
+        </div>
+
+        
+    </section>
+
+
+
+    <section class="links">
+
+
+
+
+    </section>
+
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0)
+        })
+    </script>
+
+</body>
+</html>
